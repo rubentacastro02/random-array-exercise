@@ -1,0 +1,20 @@
+#right {
+  width: 50%;
+  float: right;
+  background: blue;
+}
+
+#left {
+  width: 50%;
+  float: left;
+  color: white;
+  background: black;
+}
+
+#left:after{
+  clear: both;
+}
+
+#right li:nth-child(odd) {
+  background: yellow;
+}

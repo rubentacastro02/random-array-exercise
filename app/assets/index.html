@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Brunch</title>
+  <link rel="stylesheet" href="/app.css">
+  <script src="/vendor.js"></script>
+  <script src="/app.js"></script>
+  <script>require('initialize');</script>
+
+  <script>
+    const rand = Array.from({length: 10}, () => Math.floor(50 * Math.random() + 1));
+  </script>
+
+  <!--script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const rand = Array.from({length: 10}, () => Math.floor(50 * Math.random() + 1));
+
+    const evenArray = [];
+    const oddArray = [];
+
+    for(i=0; i<rand.length; i++) {
+      const number = rand[i];
+
+      const isEven = (number % 2);
+
+      if(isEven)
+      {
+        evenArray.push(number);
+        //console.log(`The number ${number} is even.`);
+      }
+      else {
+        oddArray.push(number);
+        //console.log(`The number ${number} is odd.`);
+      }
+    }
+
+    console.log(evenArray, oddArray);
+
+    let evenHtml = document.createElement('ul');
+    evenArray.forEach((number) => {
+      var li = document.createElement("li");
+      li.appendChild(document.createTextNode(number.toString()));
+
+      evenHtml.appendChild(li);
+    });
+    document.getElementById('left').appendChild(evenHtml);
+
+    let oddHtml = document.createElement('ul');
+    oddArray.forEach((number) => {
+      var li = document.createElement("li");
+      li.appendChild(document.createTextNode(number.toString()));
+
+      oddHtml.appendChild(li);
+    });
+    document.getElementById('right').appendChild(oddHtml);
+  });
+    //console.log(rand);
+  </script-->
+</head>
+<body>
+  <div>
+    <div id="right"></div>
+    <div id="left"></div>
+  </div>
+  <div style="clear: both"></div>
+  <br /><br />
+  <div id="second_part"></div>
+</body>
